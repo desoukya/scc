@@ -11,14 +11,14 @@ AWS.config.update({
 const sqs = new AWS.SQS({ apiVersion: '2012-11-05' });
 
 /*
- * Scheduler consumes message from SQS queue every 10 seconds
+ * Scheduler consumes message from SQS queue every 5 seconds
  */
 const init = async () => {
 
   // Reload every 10 seconds
   setTimeout(() => {
     init();
-  }, 10000);
+  }, 5000);
 };
 
 export default {

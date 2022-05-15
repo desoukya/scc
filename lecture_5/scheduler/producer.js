@@ -14,7 +14,7 @@ AWS.config.update({
 const sqs = new AWS.SQS({ apiVersion: '2012-11-05' });
 
 /*
- * Scheduler sends a message to SQS queue every 10 seconds
+ * Scheduler sends a message to SQS queue every 60 seconds
  */
 const init = async () => {
   // generate index from 0-5
@@ -31,14 +31,14 @@ const init = async () => {
 
   await Promise.all(params);
 
-  // Reload every 10 seconds
+  // Reload every 60 seconds
   setTimeout(() => {
     init();
-  }, 10000);
+  }, 600000);
 };
 
 /*
- * Scheduler sends batch messages to SQS queue every 10 seconds
+ * Scheduler sends batch messages to SQS queue every 60 seconds
  */
 const initBatch = async () => {
   // generate index from 0-5

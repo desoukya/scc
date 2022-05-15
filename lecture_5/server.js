@@ -41,5 +41,4 @@ app.listen(process.env.PORT, async () => {
     const { default: schedule } = await import(`./${job}`);
     schedule.start();
   }
-  // jobs.forEach(job => require(`./${job}`).start());
 });
