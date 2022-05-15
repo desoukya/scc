@@ -1,0 +1,24 @@
+{
+  "name": "weather-lambda",
+  "version": "0.0.1",
+  "description": "This lambda consumes orders from SQS",
+  "dependencies": {
+    "@hapi/joi": "17.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.10",
+    "@babel/preset-env": "7.17.10",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.5",
+    "bootprint": "4.0.4",
+    "bootprint-openapi": "4.0.4",
+    "eslint": "8.15.0",
+    "js-yaml": "4.1.0",
+    "serverless-api-stage": "1.4.0",
+    "serverless-aws-documentation": "1.1.0",
+    "serverless-plugin-api-gateway-auth": "1.0.1",
+    "serverless-webpack": "5.7.1",
+    "username": "6.0.0",
+    "webpack": "5.72.1"
+  }
+}
