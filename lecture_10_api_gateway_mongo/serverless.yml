@@ -1,0 +1,14 @@
+service: lecture-10-api-gateway-mongodb
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  getWeather:
+    handler: handler.getWeather
+    events:
+      - http:
+          method: GET
+          path: getWeather
