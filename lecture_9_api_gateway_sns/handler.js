@@ -15,7 +15,7 @@ module.exports.publishMessage = async (event) => {
     TopicArn: 'TOPIC_ARN', /* Insert your SNS Topic ARN */
   };
 
-  // Create promise and SNS service object
+  // Publish message to SNS topic
   await sns.publish(params).promise();
 
   return {
